@@ -1,0 +1,16 @@
+body {
+    margin: 0; background: #000; height: 100vh;
+    display: flex; justify-content: center; align-items: center;
+    font-family: 'Courier New', Courier, monospace; overflow: hidden;
+}
+#game-container { position: relative; width: 800px; height: 400px; outline: 4px solid #333; }
+canvas { display: block; background: #000; }
+#overlay {
+    position: absolute; inset: 0; background: rgba(0,0,0,0.7);
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    color: white; z-index: 10; cursor: pointer;
+}
+#ui { position: absolute; top: 0; width: 100%; pointer-events: none; }
+.progress-wrapper { width: 50%; height: 8px; background: rgba(255,255,255,0.1); margin: 20px auto; border-radius: 10px; }
+#progress-bar { width: 0%; height: 100%; background: #00ff00; box-shadow: 0 0 15px #00ff00; }
+#attempt-text { text-align: center; color: white; font-weight: bold; font-size: 1.2rem; }
